@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="G:/Code/Java/Commercial Workspace/RaspieJukeBox/libs/basicplayer3.0.jar"/>
+	<classpathentry kind="lib" path="G:/Code/Java/Commercial Workspace/RaspieJukeBox/libs/commons-logging-api.jar"/>
+	<classpathentry kind="lib" path="G:/Code/Java/Commercial Workspace/RaspieJukeBox/libs/jl1.0.jar"/>
+	<classpathentry kind="lib" path="G:/Code/Java/Commercial Workspace/RaspieJukeBox/libs/jogg-0.0.7.jar"/>
+	<classpathentry kind="lib" path="G:/Code/Java/Commercial Workspace/RaspieJukeBox/libs/jorbis-0.0.15.jar"/>
+	<classpathentry kind="lib" path="G:/Code/Java/Commercial Workspace/RaspieJukeBox/libs/jspeex0.9.7.jar"/>
+	<classpathentry kind="lib" path="G:/Code/Java/Commercial Workspace/RaspieJukeBox/libs/junit.jar"/>
+	<classpathentry kind="lib" path="G:/Code/Java/Commercial Workspace/RaspieJukeBox/libs/pi4j-core.jar"/>
+	<classpathentry kind="lib" path="G:/Code/Java/Commercial Workspace/RaspieJukeBox/libs/pi4j-device.jar"/>
+	<classpathentry kind="lib" path="G:/Code/Java/Commercial Workspace/RaspieJukeBox/libs/pi4j-example.jar"/>
+	<classpathentry kind="lib" path="G:/Code/Java/Commercial Workspace/RaspieJukeBox/libs/pi4j-gpio-extension.jar"/>
+	<classpathentry kind="lib" path="G:/Code/Java/Commercial Workspace/RaspieJukeBox/libs/pi4j-service.jar"/>
+	<classpathentry kind="lib" path="G:/Code/Java/Commercial Workspace/RaspieJukeBox/libs/vorbisspi1.0.2.jar"/>
+	<classpathentry kind="lib" path="G:/Code/Java/Commercial Workspace/RaspieJukeBox/libs/mp3spi1.9.5.jar"/>
+	<classpathentry kind="lib" path="G:/Code/Java/Commercial Workspace/RaspieJukeBox/libs/tritonus_share-0.3.6.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

@@ -1,0 +1,114 @@
+package data;
+
+import raspiejukebox.*;
+import java.util.*;
+import java.io.*;
+
+public class DataRequest {
+	
+	//Converts object to string
+	public static CharSequence stringify(Object o){
+		if (o instanceof String)
+			return ((String)o).replaceAll("(\"|\\\\)", "\\\\$1")
+								.replaceAll("^|$", "\"");
+								
+		else if (o instanceof TracksDatabase.Track){
+			TracksDatabase.Track t = (TracksDatabase.Track)o;
+			StringBuilder sb = new StringBuilder();
+			sb.append("{\"id\":");
+			sb.append(t.getID());
+			sb.append(",\"name\":");
+			sb.append(stringify(t.getName()));
+			sb.append(",\"album\":");
+			sb.append(stringify(t.getAlbum()));
+			sb.append(",\"artist\":");
+			sb.append(stringify(t.getArtist()));
+			sb.append('}');
+			
+			return sb;
+		} else if (o instanceof Collection){
+			StringBuilder sb = new StringBuilder();
+			sb.append('[');
+			for (Object oo: (Collection)o){
+				sb.append(stringify(oo));
+				sb.append(',');
+			}
+			
+			if (sb.length() > 1)
+				sb.setLength(sb.length()-1);
+			sb.append(']');
+			return sb;
+		}
+		
+		return "";
+	}
+	
+	public static CharSequence getDiscography(String artistName){
+		List<TracksDatabase.Track> discography = (artistName != null) ?
+													TracksDatabase.get().getTracksByArtist(artistName) :
+													null;
+		if (discography == null)
+			return "[]";
+			
+		return stringify(discography);
+	}
+	
+	public static CharSequence getArtists(){
+		return stringify(TracksDatabase.get().getArtists());
+	}
+	
+	public static CharSequence getAll(){
+		StringBuilder sb = new StringBuilder();
+		sb.append('{');
+		for (String artistName: TracksDatabase.get().getArtists()){
+			sb.append(stringify(artistName));
+			sb.append(':');
+			sb.append(getDiscography(artistName));
+			sb.append(',');
+		}
+		if (sb.length() > 1)
+			sb.setLength(sb.length()-1);
+		sb.append('}');
+		return sb;
+	}
+	
+	public static String getVolume(){
+		try{
+			Process proc = Runtime.getRuntime().exec("amixer get PCM");
+			BufferedReader stdIn = new BufferedReader(new 
+						 InputStreamReader(proc.getInputStream()));
+			
+			String volume = "";
+			String line = null;
+			while ((line = stdIn.readLine()) != null && !volume.matches("[0-9]+\\%"))
+				volume = line.replaceAll(".*?([0-9]+\\%).*", "$1");
+			
+			return volume;
+		} catch (Exception e) {
+			//out.println("<!--IO error occured-->");
+			return "00%";
+		}
+	}
+	
+	public static CharSequence getQueue(){
+		return stringify(JukeBox.get().getQueue());
+	}
+	
+	public static CharSequence getCurrentState(){
+		JukeBox jb = JukeBox.get();
+		StringBuilder sb = new StringBuilder();
+		sb.append("{\"track\":");
+		TracksDatabase.Track track = jb.getCurrentTrack();
+		if (track == null)
+			sb.append("{\"id\":-1,\"name\":\"Nothing!\",\"abum\":\"...\",\"artist\":\"...\"},\"paused\":true");
+		else {
+			sb.append(stringify(track));
+			sb.append(",\"paused\":");
+			sb.append(jb.getState() != JukeBox.State.PLAYING);
+		}
+		
+		sb.append(",\"volume\":50}");
+		
+		return sb;
+	}
+}

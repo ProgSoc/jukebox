@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+<link rel="stylesheet" type="text/css" href="basicstyle.css" />
+<script src="slider.js" type="text/javascript"></script>
+</head>
+
+<body>
+	<div style="float: left; width: 70%;">
+		<div align="center" style="text-align:center;font-weight:bold;font-size:1.2em"><span id="name">Loading...</span></div>
+		<div align="center"><!--Album | Artist-->
+			<span id="album"  style="padding-right:1em;text-align:left; border-right:thin solid #00ff00">Loading...</span>
+			<span id="artist" style="padding-left:1em; text-align:right;border-left: thin solid #00ff00">Loading...</span>
+		</div>
+		<br />
+		<div align="center" class="commandButtons">
+			<img src="play.png" onClick="play();" />
+			<img src="pause.png" onClick="pause();" />
+			<img src="next.png" onClick="next();" />
+		</div>
+	</div>
+	
+	<div style="float: right; width:30%; margin-top: 2.5em;">
+		Volume:<br />
+		<canvas width="250" height="30" id="sliderCanvas"></canvas>
+	</div>
+	
+<script language="javascript" src="xmlfunctions.js"></script>
+
+<script language="javascript">
+
+var slider = new Slider(document.getElementById("sliderCanvas"),
+					{
+						minVal: 0, maxVal: 1.5*Math.E,
+						sliderColor: '#00FF00',
+						bgColor: '#666666'
+					});
+
+var timeout = 1;
+slider.onValueChange = function(){
+	clearTimeout(timeout);
+	timeout = setTimeout(function(){
+		var level = Math.floor(100*(1-Math.pow(Math.E, -1.05*slider.value)));
+		XMLDataOperation("jukebox.jsp?com=vol&volLevel=" + level, function(){});
+	}, 100);
+}
+					
+					
+function play(){
+	jukeboxCommand("play");
+}
+
+function pause(){
+	jukeboxCommand("pause");
+}
+
+function next(){
+	jukeboxCommand("next");
+}
+
+function jukeboxCommand(command){
+	XMLDataOperation("jukebox.jsp?com=" + command, 
+	function(){
+		parent.reloadPlayData();
+	});
+}
+
+function loadXmlData(xmlDoc){
+	var currentTrack = xmlDoc.getElementsByTagName("track");
+	currentTrack = currentTrack[0];
+	
+	document.getElementById("name").innerHTML = 
+		currentTrack.getElementsByTagName("name")[0].childNodes[0].nodeValue;
+	document.getElementById("album").innerHTML = 
+		currentTrack.getElementsByTagName("album")[0].childNodes[0].nodeValue;
+	document.getElementById("artist").innerHTML = 
+		currentTrack.getElementsByTagName("artist")[0].childNodes[0].nodeValue;
+	
+	var volume = xmlDoc.getElementsByTagName("volume")[0].childNodes[0].nodeValue;
+	volume = volume.substr(0, volume.length-1); //Remove % sign
+	//Modify it to the slider position
+	slider.value = Math.log(1-(volume/100))/-1.05;
+	slider.paint();
+}
+
+function reloadCurrentState(){
+	XMLDataOperation("getdata.jsp?data=currentstate", loadXmlData);
+}
+
+reloadCurrentState();
+self.setInterval(reloadCurrentState, 2500);
+</script>
+</body>
+</html>

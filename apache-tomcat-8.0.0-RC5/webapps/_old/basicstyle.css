@@ -1,0 +1,42 @@
+body{
+	background-color: black;
+	margin-right: 0px;
+	margin-left: 0px;
+	color: #00ff00;
+	font-weight: bold;
+	font-family: "courier new", courier, monospace;
+}
+
+div.commandButtons img{
+	padding-right: 0.5em;
+	padding-left: 0.5em;
+	cursor: Pointer;
+}
+
+tr.d0 td, tr.d1 td{
+	background-color: black;
+	height: 2em;
+	white-space: pre;
+	overflow:hidden;
+	border-right: thin solid #00ff00;
+	padding-left: 0.5em;
+}
+
+tr.d1 td {
+	background-color: #222222;
+}
+
+.selectable, .selectable:hover {
+	cursor: Pointer;
+}
+
+.selectable:hover{
+	color: #77FF77;
+	text-decoration: underline;
+}
+
+a:visited, a:link, a:active, a:hover{
+	color: #00ff00;
+	font-size: normal;
+	text-decoration: none;
+}

@@ -1,0 +1,28 @@
+Programmers guide
+
+I want to edit...
+|
+|--Hardware/LEDs/Buttons
+| |-Modify the HardwareInterface.java
+|
+|--Music/Playback/Queuing
+| |-Jukebox.java
+|
+|--Website
+| |--Song Selection
+| | |-trackselect.jsp
+| |
+| |--Queue
+| | |-trackqueue.html
+| |
+| |--Banner (Play pause next whats playing etc)
+| | |-topbanner.html
+|
+|--Database/Adding/organisation of tracks
+| |-TracksDatabase.java
+|
+|--Settings
+| |-Settings.java
+
+There is a bug...
+Almost always in the hardware interface

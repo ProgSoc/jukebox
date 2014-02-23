@@ -1,0 +1,46 @@
+<!DOCTYPE html
+	PUBLIC "-//W3D//DTD XHTML 1.0 Strict//EN"
+		"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<link rel="stylesheet" type="text/css" href="basicstyle.css" />
+</head>
+
+<body>
+<h2>Songs Queue</h2>
+<div id="queuetable">
+<table border="0" cellspacing="0" style="width:100%">
+	<tr class="d0"><th>#</th><th>Name</th><th>Artist</th></tr>
+</table>
+</div>
+
+<script type="text/javascript" src="xmlfunctions.js"></script>
+
+<script type="text/javascript">
+function setTable(xmlDoc){
+	var htmlTable = "<table border=\"0\" cellspacing=\"0\" style=\"width:100%;table-layout:fixed\">";
+	htmlTable += "<colgroup><col style=\"width:2em\" /><col style=\"width:100%\" /><col style=\"width:5em\" /></colgroup>";
+	htmlTable += "<tr class=\"d0\"><th>#</th><th>Name</th><th>Artist</th></tr>";
+	
+	var songQueue = xmlDoc.getElementsByTagName("track");
+	
+	for (i = 0; i < songQueue.length; i++){
+		htmlTable += "<tr class=\"d" + (i+1)%2 + "\">";
+		htmlTable += "<td>" + (i+1) + "</td>";
+		htmlTable += "<td>" + songQueue[i].getElementsByTagName("name")[0].childNodes[0].nodeValue + "</td>";
+		htmlTable += "<td style=\"border-right:none;\">" + songQueue[i].getElementsByTagName("artist")[0].childNodes[0].nodeValue + "</td></tr>";
+	}
+	htmlTable += "</table>";
+	document.getElementById("queuetable").innerHTML = htmlTable;
+}
+
+function reloadSongQueue(){
+	XMLDataOperation("getdata.jsp?data=queue", setTable);
+}
+
+reloadSongQueue();
+self.setInterval(reloadSongQueue, 5000);
+</script>
+</body>
+</html>

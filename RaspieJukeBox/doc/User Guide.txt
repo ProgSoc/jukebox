@@ -1,0 +1,29 @@
+User Guide for RaspiJukebox
+
+This guide is simply for the use and troubleshoot of the raspijukebox. If you want to modify the code this is probably not the guide you want.
+
+Stuff Worth knowing:
+No modification is needed to run it on something other than a raspberry pi, just turn the hardware off in the settings file.
+To add or change the directory to search for tracks, simply change the settings.ini file.
+
+How to get it up and running:
+To get the jukebox up and running, simply run the startup (.sh or .bat) script in the bin folder. From there access it like a normal apache server.
+WARNING!! Always Press play online before touching the hardware stuff on first startup.
+Make sure that the settings file is properly configured.
+
+Hardware Stuff:
+PlayPause: Does what you'd expect. Never had an issue yet with it
+Skip: Skips to the track. It's fairly tempermental and gets in way of file io from time to time which requires a reset
+DeadMan: **Untested** at the time of writing this. Many logic errors. Like how it does not activate upon pressing play on the online modules wont activate the switch
+
+TroubleShooting:
+In almost all cases the issue has to do with the configuration of the settings file (especially if it has been recently changed). To get a wordier description of what is going on,
+try running the jar file directly.
+
+cd into webapps/ROOT/WEB-INF/lib
+
+to run use the command
+sudo java -jar raspijukebox.jar true
+
+The true command enables hardware interface.
+That should show what the issue is. If that all works well then the issue will most likely be in the website portion.

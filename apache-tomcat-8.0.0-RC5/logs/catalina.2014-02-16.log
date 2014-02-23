@@ -1,0 +1,224 @@
+16-Feb-2014 10:41:30.536 INFO [main] org.apache.catalina.core.AprLifecycleListener.init The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: C:\glassfish4\jdk7\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\nodejs\;C:\Python27;G:\Code\IDEs\Jython;C:\glassfish4\jdk7\bin;C:\Program Files\nodejs;.
+16-Feb-2014 10:41:31.158 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-80"]
+16-Feb-2014 10:41:31.197 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+16-Feb-2014 10:41:31.200 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+16-Feb-2014 10:41:31.215 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+16-Feb-2014 10:41:31.216 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 1217 ms
+16-Feb-2014 10:41:31.242 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service Catalina
+16-Feb-2014 10:41:31.242 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.0-RC5
+16-Feb-2014 10:41:31.272 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory G:\Code\RaspieJukeBox\apache-tomcat-8.0.0-RC5\webapps\ROOT
+16-Feb-2014 10:41:32.319 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+16-Feb-2014 10:41:32.763 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory G:\Code\RaspieJukeBox\apache-tomcat-8.0.0-RC5\webapps\_old
+16-Feb-2014 10:41:33.190 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+16-Feb-2014 10:41:33.207 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-80"]
+16-Feb-2014 10:41:33.213 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+16-Feb-2014 10:41:33.214 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 1997 ms
+16-Feb-2014 10:42:02.638 SEVERE [Thread-6] raspiejukebox.TracksDatabase.getNewDatabase Unsupported audio format E:\Itunes\Music\Macklemore & Ryan Lewis\The Heist (Deluxe Edition)\14 Starting Over (feat. Ben Bridwell.mp3
+16-Feb-2014 10:42:02.655 SEVERE [Thread-6] raspiejukebox.TracksDatabase.getNewDatabase Unsupported audio format E:\Itunes\Music\Macklemore & Ryan Lewis\The Heist (Deluxe Edition)\15 Cowboy Boots.mp3
+16-Feb-2014 10:42:12.131 INFO [http-nio-80-exec-10] javazoom.jlgui.basicplayer.BasicPlayer.open open(E:\Itunes\Music\7th Wonder\Mercy Falls\07 Tears for a Son.mp3)
+16-Feb-2014 10:42:12.305 INFO [http-nio-80-exec-10] javazoom.jlgui.basicplayer.BasicPlayer.createLine Create Line
+16-Feb-2014 10:42:12.306 INFO [http-nio-80-exec-10] javazoom.jlgui.basicplayer.BasicPlayer.createLine Create Line : Source format : MPEG1L3 44100.0 Hz, unknown bits per sample, stereo, unknown frame size, 38.28125 frames/second, 
+16-Feb-2014 10:42:12.307 INFO [http-nio-80-exec-10] javazoom.jlgui.basicplayer.BasicPlayer.createLine Create Line : Target format: PCM_SIGNED 44100.0 Hz, 16 bit, stereo, 4 bytes/frame, little-endian
+16-Feb-2014 10:42:12.581 INFO [http-nio-80-exec-10] javazoom.jlgui.basicplayer.BasicPlayer.createLine Line : com.sun.media.sound.DirectAudioDevice$DirectSDL@426c87c9
+16-Feb-2014 10:42:12.593 INFO [http-nio-80-exec-10] javazoom.jlgui.basicplayer.BasicPlayer.startPlayback startPlayback called
+16-Feb-2014 10:42:12.595 INFO [http-nio-80-exec-10] javazoom.jlgui.basicplayer.BasicPlayer.initLine initLine()
+16-Feb-2014 10:42:12.629 INFO [http-nio-80-exec-10] javazoom.jlgui.basicplayer.BasicPlayer.openLine Open Line : BufferSize=88200
+16-Feb-2014 10:42:12.630 INFO [http-nio-80-exec-10] javazoom.jlgui.basicplayer.BasicPlayer.openLine Master Gain Control : [-80.0,6.0206] 0.625
+16-Feb-2014 10:42:12.631 INFO [http-nio-80-exec-10] javazoom.jlgui.basicplayer.BasicPlayer.openLine Pan Control : [-1.0,1.0] 0.0078125
+16-Feb-2014 10:42:12.631 INFO [http-nio-80-exec-10] javazoom.jlgui.basicplayer.BasicPlayer.startPlayback Creating new thread
+16-Feb-2014 10:42:12.649 INFO [BasicPlayer] javazoom.jlgui.basicplayer.BasicPlayer.run Thread Running
+16-Feb-2014 10:42:14.561 INFO [http-nio-80-exec-1] javazoom.jlgui.basicplayer.BasicPlayer.open open(E:\Itunes\Music\Compilations\Punk Goes Pop 4\03 Last Friday Night (T.G.I.F.).mp3)
+16-Feb-2014 10:42:15.088 INFO [BasicPlayer] javazoom.jlgui.basicplayer.BasicPlayer.closeStream Stream closed
+16-Feb-2014 10:42:15.089 INFO [http-nio-80-exec-1] javazoom.jlgui.basicplayer.BasicPlayer.closeStream Stream closed
+16-Feb-2014 10:42:15.090 INFO [BasicPlayer] javazoom.jlgui.basicplayer.BasicPlayer.run Thread completed
+16-Feb-2014 10:42:15.562 INFO [http-nio-80-exec-1] javazoom.jlgui.basicplayer.BasicPlayer.createLine Create Line
+16-Feb-2014 10:42:15.563 INFO [http-nio-80-exec-1] javazoom.jlgui.basicplayer.BasicPlayer.createLine Create Line : Source format : MPEG1L3 44100.0 Hz, unknown bits per sample, stereo, unknown frame size, 38.28125 frames/second, 
+16-Feb-2014 10:42:15.564 INFO [http-nio-80-exec-1] javazoom.jlgui.basicplayer.BasicPlayer.createLine Create Line : Target format: PCM_SIGNED 44100.0 Hz, 16 bit, stereo, 4 bytes/frame, little-endian
+16-Feb-2014 10:42:15.565 INFO [http-nio-80-exec-1] javazoom.jlgui.basicplayer.BasicPlayer.createLine Line : com.sun.media.sound.DirectAudioDevice$DirectSDL@258c4f3a
+16-Feb-2014 10:42:15.566 INFO [http-nio-80-exec-1] javazoom.jlgui.basicplayer.BasicPlayer.startPlayback startPlayback called
+16-Feb-2014 10:42:15.567 INFO [http-nio-80-exec-1] javazoom.jlgui.basicplayer.BasicPlayer.initLine initLine()
+16-Feb-2014 10:42:15.577 INFO [http-nio-80-exec-1] javazoom.jlgui.basicplayer.BasicPlayer.openLine Open Line : BufferSize=88200
+16-Feb-2014 10:42:15.578 INFO [http-nio-80-exec-1] javazoom.jlgui.basicplayer.BasicPlayer.openLine Master Gain Control : [-80.0,6.0206] 0.625
+16-Feb-2014 10:42:15.579 INFO [http-nio-80-exec-1] javazoom.jlgui.basicplayer.BasicPlayer.openLine Pan Control : [-1.0,1.0] 0.0078125
+16-Feb-2014 10:42:15.579 INFO [http-nio-80-exec-1] javazoom.jlgui.basicplayer.BasicPlayer.startPlayback Creating new thread
+16-Feb-2014 10:42:15.580 INFO [BasicPlayer] javazoom.jlgui.basicplayer.BasicPlayer.run Thread Running
+16-Feb-2014 10:42:44.850 SEVERE [Thread-6] raspiejukebox.TracksDatabase.getNewDatabase Unsupported audio format E:\Itunes\Music\Compilations\Random\01 Gloomy Sunday.mp3
+16-Feb-2014 10:45:26.611 INFO [http-nio-80-exec-1] javazoom.jlgui.basicplayer.BasicPlayer.open open(E:\Itunes\Music\Flobots\The Circle In The Square\11 The Rose And The Thistle.mp3)
+16-Feb-2014 10:45:27.122 INFO [BasicPlayer] javazoom.jlgui.basicplayer.BasicPlayer.closeStream Stream closed
+16-Feb-2014 10:45:27.123 INFO [http-nio-80-exec-1] javazoom.jlgui.basicplayer.BasicPlayer.closeStream Stream closed
+16-Feb-2014 10:45:27.124 INFO [BasicPlayer] javazoom.jlgui.basicplayer.BasicPlayer.run Thread completed
+16-Feb-2014 10:45:27.220 INFO [http-nio-80-exec-1] javazoom.jlgui.basicplayer.BasicPlayer.createLine Create Line
+16-Feb-2014 10:45:27.220 INFO [http-nio-80-exec-1] javazoom.jlgui.basicplayer.BasicPlayer.createLine Create Line : Source format : MPEG1L3 44100.0 Hz, unknown bits per sample, stereo, unknown frame size, 38.28125 frames/second, 
+16-Feb-2014 10:45:27.221 INFO [http-nio-80-exec-1] javazoom.jlgui.basicplayer.BasicPlayer.createLine Create Line : Target format: PCM_SIGNED 44100.0 Hz, 16 bit, stereo, 4 bytes/frame, little-endian
+16-Feb-2014 10:45:27.226 INFO [http-nio-80-exec-1] javazoom.jlgui.basicplayer.BasicPlayer.createLine Line : com.sun.media.sound.DirectAudioDevice$DirectSDL@fcc10a7
+16-Feb-2014 10:45:27.227 INFO [http-nio-80-exec-1] javazoom.jlgui.basicplayer.BasicPlayer.startPlayback startPlayback called
+16-Feb-2014 10:45:27.227 INFO [http-nio-80-exec-1] javazoom.jlgui.basicplayer.BasicPlayer.initLine initLine()
+16-Feb-2014 10:45:27.240 INFO [http-nio-80-exec-1] javazoom.jlgui.basicplayer.BasicPlayer.openLine Open Line : BufferSize=88200
+16-Feb-2014 10:45:27.241 INFO [http-nio-80-exec-1] javazoom.jlgui.basicplayer.BasicPlayer.openLine Master Gain Control : [-80.0,6.0206] 0.625
+16-Feb-2014 10:45:27.241 INFO [http-nio-80-exec-1] javazoom.jlgui.basicplayer.BasicPlayer.openLine Pan Control : [-1.0,1.0] 0.0078125
+16-Feb-2014 10:45:27.242 INFO [http-nio-80-exec-1] javazoom.jlgui.basicplayer.BasicPlayer.startPlayback Creating new thread
+16-Feb-2014 10:45:27.257 INFO [BasicPlayer] javazoom.jlgui.basicplayer.BasicPlayer.run Thread Running
+16-Feb-2014 10:45:32.418 INFO [http-nio-80-exec-6] javazoom.jlgui.basicplayer.BasicPlayer.open open(E:\Itunes\Music\Flobots\The Circle In The Square\08 Interlude.mp3)
+16-Feb-2014 10:45:32.963 INFO [BasicPlayer] javazoom.jlgui.basicplayer.BasicPlayer.closeStream Stream closed
+16-Feb-2014 10:45:32.963 INFO [http-nio-80-exec-6] javazoom.jlgui.basicplayer.BasicPlayer.closeStream Stream closed
+16-Feb-2014 10:45:32.964 INFO [BasicPlayer] javazoom.jlgui.basicplayer.BasicPlayer.run Thread completed
+16-Feb-2014 10:45:32.999 INFO [http-nio-80-exec-6] javazoom.jlgui.basicplayer.BasicPlayer.createLine Create Line
+16-Feb-2014 10:45:33.000 INFO [http-nio-80-exec-6] javazoom.jlgui.basicplayer.BasicPlayer.createLine Create Line : Source format : MPEG1L3 44100.0 Hz, unknown bits per sample, stereo, unknown frame size, 38.28125 frames/second, 
+16-Feb-2014 10:45:33.000 INFO [http-nio-80-exec-6] javazoom.jlgui.basicplayer.BasicPlayer.createLine Create Line : Target format: PCM_SIGNED 44100.0 Hz, 16 bit, stereo, 4 bytes/frame, little-endian
+16-Feb-2014 10:45:33.001 INFO [http-nio-80-exec-6] javazoom.jlgui.basicplayer.BasicPlayer.createLine Line : com.sun.media.sound.DirectAudioDevice$DirectSDL@6ffcd9f9
+16-Feb-2014 10:45:33.002 INFO [http-nio-80-exec-6] javazoom.jlgui.basicplayer.BasicPlayer.startPlayback startPlayback called
+16-Feb-2014 10:45:33.002 INFO [http-nio-80-exec-6] javazoom.jlgui.basicplayer.BasicPlayer.initLine initLine()
+16-Feb-2014 10:45:33.016 INFO [http-nio-80-exec-6] javazoom.jlgui.basicplayer.BasicPlayer.openLine Open Line : BufferSize=88200
+16-Feb-2014 10:45:33.017 INFO [http-nio-80-exec-6] javazoom.jlgui.basicplayer.BasicPlayer.openLine Master Gain Control : [-80.0,6.0206] 0.625
+16-Feb-2014 10:45:33.017 INFO [http-nio-80-exec-6] javazoom.jlgui.basicplayer.BasicPlayer.openLine Pan Control : [-1.0,1.0] 0.0078125
+16-Feb-2014 10:45:33.018 INFO [http-nio-80-exec-6] javazoom.jlgui.basicplayer.BasicPlayer.startPlayback Creating new thread
+16-Feb-2014 10:45:33.018 INFO [BasicPlayer] javazoom.jlgui.basicplayer.BasicPlayer.run Thread Running
+16-Feb-2014 10:45:42.572 SEVERE [http-nio-80-exec-3] org.apache.tomcat.websocket.pojo.PojoEndpointBase.onError No error handling configured for [data.SocketServer] and the following error occurred
+ java.io.IOException: java.util.concurrent.ExecutionException: java.io.IOException: An established connection was aborted by the software in your host machine
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.startMessageBlock(WsRemoteEndpointImplBase.java:226)
+	at org.apache.tomcat.websocket.WsSession.sendCloseMessage(WsSession.java:476)
+	at org.apache.tomcat.websocket.WsSession.onClose(WsSession.java:439)
+	at org.apache.tomcat.websocket.WsFrameBase.processDataControl(WsFrameBase.java:316)
+	at org.apache.tomcat.websocket.WsFrameBase.processData(WsFrameBase.java:270)
+	at org.apache.tomcat.websocket.WsFrameBase.processInputBuffer(WsFrameBase.java:116)
+	at org.apache.tomcat.websocket.server.WsFrameServer.onDataAvailable(WsFrameServer.java:55)
+	at org.apache.tomcat.websocket.server.WsHttpUpgradeHandler$WsReadListener.onDataAvailable(WsHttpUpgradeHandler.java:192)
+	at org.apache.coyote.http11.upgrade.AbstractServletInputStream.onDataAvailable(AbstractServletInputStream.java:169)
+	at org.apache.coyote.http11.upgrade.AbstractProcessor.upgradeDispatch(AbstractProcessor.java:95)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:640)
+	at org.apache.coyote.http11.Http11NioProtocol$Http11ConnectionHandler.process(Http11NioProtocol.java:223)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1597)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1555)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:744)
+Caused by: java.util.concurrent.ExecutionException: java.io.IOException: An established connection was aborted by the software in your host machine
+	at org.apache.tomcat.websocket.FutureToSendHandler.get(FutureToSendHandler.java:102)
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.startMessageBlock(WsRemoteEndpointImplBase.java:222)
+	... 16 more
+Caused by: java.io.IOException: An established connection was aborted by the software in your host machine
+	at sun.nio.ch.SocketDispatcher.write0(Native Method)
+	at sun.nio.ch.SocketDispatcher.write(SocketDispatcher.java:51)
+	at sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:93)
+	at sun.nio.ch.IOUtil.write(IOUtil.java:65)
+	at sun.nio.ch.SocketChannelImpl.write(SocketChannelImpl.java:487)
+	at org.apache.tomcat.util.net.NioChannel.write(NioChannel.java:123)
+	at org.apache.tomcat.util.net.NioSelectorPool.write(NioSelectorPool.java:185)
+	at org.apache.coyote.http11.upgrade.NioServletOutputStream.doWriteInternal(NioServletOutputStream.java:93)
+	at org.apache.coyote.http11.upgrade.NioServletOutputStream.doWrite(NioServletOutputStream.java:60)
+	at org.apache.coyote.http11.upgrade.AbstractServletOutputStream.writeInternal(AbstractServletOutputStream.java:116)
+	at org.apache.coyote.http11.upgrade.AbstractServletOutputStream.write(AbstractServletOutputStream.java:83)
+	at org.apache.tomcat.websocket.server.WsRemoteEndpointImplServer.onWritePossible(WsRemoteEndpointImplServer.java:84)
+	at org.apache.tomcat.websocket.server.WsRemoteEndpointImplServer.doWrite(WsRemoteEndpointImplServer.java:71)
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.writeMessagePart(WsRemoteEndpointImplBase.java:362)
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.startMessage(WsRemoteEndpointImplBase.java:259)
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.startMessageBlock(WsRemoteEndpointImplBase.java:217)
+	... 16 more
+
+16-Feb-2014 10:45:51.562 INFO [http-nio-80-exec-5] javazoom.jlgui.basicplayer.BasicPlayer.open open(E:\Itunes\Music\Flobots\The Circle In The Square\11 The Rose And The Thistle.mp3)
+16-Feb-2014 10:45:52.110 INFO [BasicPlayer] javazoom.jlgui.basicplayer.BasicPlayer.closeStream Stream closed
+16-Feb-2014 10:45:52.110 INFO [http-nio-80-exec-5] javazoom.jlgui.basicplayer.BasicPlayer.closeStream Stream closed
+16-Feb-2014 10:45:52.111 INFO [BasicPlayer] javazoom.jlgui.basicplayer.BasicPlayer.run Thread completed
+16-Feb-2014 10:45:52.127 INFO [http-nio-80-exec-5] javazoom.jlgui.basicplayer.BasicPlayer.createLine Create Line
+16-Feb-2014 10:45:52.128 INFO [http-nio-80-exec-5] javazoom.jlgui.basicplayer.BasicPlayer.createLine Create Line : Source format : MPEG1L3 44100.0 Hz, unknown bits per sample, stereo, unknown frame size, 38.28125 frames/second, 
+16-Feb-2014 10:45:52.129 INFO [http-nio-80-exec-5] javazoom.jlgui.basicplayer.BasicPlayer.createLine Create Line : Target format: PCM_SIGNED 44100.0 Hz, 16 bit, stereo, 4 bytes/frame, little-endian
+16-Feb-2014 10:45:52.130 INFO [http-nio-80-exec-5] javazoom.jlgui.basicplayer.BasicPlayer.createLine Line : com.sun.media.sound.DirectAudioDevice$DirectSDL@13940478
+16-Feb-2014 10:45:52.130 INFO [http-nio-80-exec-5] javazoom.jlgui.basicplayer.BasicPlayer.startPlayback startPlayback called
+16-Feb-2014 10:45:52.131 INFO [http-nio-80-exec-5] javazoom.jlgui.basicplayer.BasicPlayer.initLine initLine()
+16-Feb-2014 10:45:52.141 INFO [http-nio-80-exec-5] javazoom.jlgui.basicplayer.BasicPlayer.openLine Open Line : BufferSize=88200
+16-Feb-2014 10:45:52.141 INFO [http-nio-80-exec-5] javazoom.jlgui.basicplayer.BasicPlayer.openLine Master Gain Control : [-80.0,6.0206] 0.625
+16-Feb-2014 10:45:52.142 INFO [http-nio-80-exec-5] javazoom.jlgui.basicplayer.BasicPlayer.openLine Pan Control : [-1.0,1.0] 0.0078125
+16-Feb-2014 10:45:52.142 INFO [http-nio-80-exec-5] javazoom.jlgui.basicplayer.BasicPlayer.startPlayback Creating new thread
+16-Feb-2014 10:45:52.142 INFO [BasicPlayer] javazoom.jlgui.basicplayer.BasicPlayer.run Thread Running
+16-Feb-2014 10:45:53.691 INFO [http-nio-80-exec-10] javazoom.jlgui.basicplayer.BasicPlayer.open open(E:\Itunes\Music\Hiam\Days Are Gone\10 Let Me Go.mp3)
+16-Feb-2014 10:45:54.127 INFO [BasicPlayer] javazoom.jlgui.basicplayer.BasicPlayer.closeStream Stream closed
+16-Feb-2014 10:45:54.127 INFO [http-nio-80-exec-10] javazoom.jlgui.basicplayer.BasicPlayer.closeStream Stream closed
+16-Feb-2014 10:45:54.127 INFO [BasicPlayer] javazoom.jlgui.basicplayer.BasicPlayer.run Thread completed
+16-Feb-2014 10:45:54.210 INFO [http-nio-80-exec-10] javazoom.jlgui.basicplayer.BasicPlayer.createLine Create Line
+16-Feb-2014 10:45:54.210 INFO [http-nio-80-exec-10] javazoom.jlgui.basicplayer.BasicPlayer.createLine Create Line : Source format : MPEG1L3 44100.0 Hz, unknown bits per sample, stereo, unknown frame size, 38.28125 frames/second, 
+16-Feb-2014 10:45:54.210 INFO [http-nio-80-exec-10] javazoom.jlgui.basicplayer.BasicPlayer.createLine Create Line : Target format: PCM_SIGNED 44100.0 Hz, 16 bit, stereo, 4 bytes/frame, little-endian
+16-Feb-2014 10:45:54.211 INFO [http-nio-80-exec-10] javazoom.jlgui.basicplayer.BasicPlayer.createLine Line : com.sun.media.sound.DirectAudioDevice$DirectSDL@5db6b313
+16-Feb-2014 10:45:54.212 INFO [http-nio-80-exec-10] javazoom.jlgui.basicplayer.BasicPlayer.startPlayback startPlayback called
+16-Feb-2014 10:45:54.212 INFO [http-nio-80-exec-10] javazoom.jlgui.basicplayer.BasicPlayer.initLine initLine()
+16-Feb-2014 10:45:54.225 INFO [http-nio-80-exec-10] javazoom.jlgui.basicplayer.BasicPlayer.openLine Open Line : BufferSize=88200
+16-Feb-2014 10:45:54.226 INFO [http-nio-80-exec-10] javazoom.jlgui.basicplayer.BasicPlayer.openLine Master Gain Control : [-80.0,6.0206] 0.625
+16-Feb-2014 10:45:54.226 INFO [http-nio-80-exec-10] javazoom.jlgui.basicplayer.BasicPlayer.openLine Pan Control : [-1.0,1.0] 0.0078125
+16-Feb-2014 10:45:54.226 INFO [http-nio-80-exec-10] javazoom.jlgui.basicplayer.BasicPlayer.startPlayback Creating new thread
+16-Feb-2014 10:45:54.227 INFO [BasicPlayer] javazoom.jlgui.basicplayer.BasicPlayer.run Thread Running
+16-Feb-2014 10:50:02.752 INFO [BasicPlayer] javazoom.jlgui.basicplayer.BasicPlayer.closeStream Stream closed
+16-Feb-2014 10:50:02.753 INFO [Thread-204] javazoom.jlgui.basicplayer.BasicPlayer.open open(E:\Itunes\Music\OK Go\Of the Blue Colour of the Sky\05 Skyscrapers.mp3)
+16-Feb-2014 10:50:02.753 INFO [BasicPlayer] javazoom.jlgui.basicplayer.BasicPlayer.run Thread completed
+16-Feb-2014 10:50:02.754 INFO [Thread-204] javazoom.jlgui.basicplayer.BasicPlayer.closeStream Stream closed
+16-Feb-2014 10:50:02.845 INFO [Thread-204] javazoom.jlgui.basicplayer.BasicPlayer.createLine Create Line
+16-Feb-2014 10:50:02.845 INFO [Thread-204] javazoom.jlgui.basicplayer.BasicPlayer.createLine Create Line : Source format : MPEG1L3 44100.0 Hz, unknown bits per sample, stereo, unknown frame size, 38.28125 frames/second, 
+16-Feb-2014 10:50:02.846 INFO [Thread-204] javazoom.jlgui.basicplayer.BasicPlayer.createLine Create Line : Target format: PCM_SIGNED 44100.0 Hz, 16 bit, stereo, 4 bytes/frame, little-endian
+16-Feb-2014 10:50:02.851 INFO [Thread-204] javazoom.jlgui.basicplayer.BasicPlayer.createLine Line : com.sun.media.sound.DirectAudioDevice$DirectSDL@3f8fddac
+16-Feb-2014 10:50:02.851 INFO [Thread-204] javazoom.jlgui.basicplayer.BasicPlayer.startPlayback startPlayback called
+16-Feb-2014 10:50:02.852 INFO [Thread-204] javazoom.jlgui.basicplayer.BasicPlayer.initLine initLine()
+16-Feb-2014 10:50:02.865 INFO [Thread-204] javazoom.jlgui.basicplayer.BasicPlayer.openLine Open Line : BufferSize=88200
+16-Feb-2014 10:50:02.866 INFO [Thread-204] javazoom.jlgui.basicplayer.BasicPlayer.openLine Master Gain Control : [-80.0,6.0206] 0.625
+16-Feb-2014 10:50:02.866 INFO [Thread-204] javazoom.jlgui.basicplayer.BasicPlayer.openLine Pan Control : [-1.0,1.0] 0.0078125
+16-Feb-2014 10:50:02.866 INFO [Thread-204] javazoom.jlgui.basicplayer.BasicPlayer.startPlayback Creating new thread
+16-Feb-2014 10:50:02.867 INFO [BasicPlayer] javazoom.jlgui.basicplayer.BasicPlayer.run Thread Running
+16-Feb-2014 10:54:41.197 INFO [BasicPlayer] javazoom.jlgui.basicplayer.BasicPlayer.closeStream Stream closed
+16-Feb-2014 10:54:41.197 INFO [Thread-210] javazoom.jlgui.basicplayer.BasicPlayer.open open(E:\Itunes\Music\Kamelot\Silverthorn\12 Continuum.mp3)
+16-Feb-2014 10:54:41.198 INFO [Thread-210] javazoom.jlgui.basicplayer.BasicPlayer.closeStream Stream closed
+16-Feb-2014 10:54:41.198 INFO [BasicPlayer] javazoom.jlgui.basicplayer.BasicPlayer.run Thread completed
+16-Feb-2014 10:54:41.285 INFO [Thread-210] javazoom.jlgui.basicplayer.BasicPlayer.createLine Create Line
+16-Feb-2014 10:54:41.286 INFO [Thread-210] javazoom.jlgui.basicplayer.BasicPlayer.createLine Create Line : Source format : MPEG1L3 44100.0 Hz, unknown bits per sample, stereo, unknown frame size, 38.28125 frames/second, 
+16-Feb-2014 10:54:41.286 INFO [Thread-210] javazoom.jlgui.basicplayer.BasicPlayer.createLine Create Line : Target format: PCM_SIGNED 44100.0 Hz, 16 bit, stereo, 4 bytes/frame, little-endian
+16-Feb-2014 10:54:41.291 INFO [Thread-210] javazoom.jlgui.basicplayer.BasicPlayer.createLine Line : com.sun.media.sound.DirectAudioDevice$DirectSDL@53d3d9e7
+16-Feb-2014 10:54:41.292 INFO [Thread-210] javazoom.jlgui.basicplayer.BasicPlayer.startPlayback startPlayback called
+16-Feb-2014 10:54:41.292 INFO [Thread-210] javazoom.jlgui.basicplayer.BasicPlayer.initLine initLine()
+16-Feb-2014 10:54:41.306 INFO [Thread-210] javazoom.jlgui.basicplayer.BasicPlayer.openLine Open Line : BufferSize=88200
+16-Feb-2014 10:54:41.307 INFO [Thread-210] javazoom.jlgui.basicplayer.BasicPlayer.openLine Master Gain Control : [-80.0,6.0206] 0.625
+16-Feb-2014 10:54:41.307 INFO [Thread-210] javazoom.jlgui.basicplayer.BasicPlayer.openLine Pan Control : [-1.0,1.0] 0.0078125
+16-Feb-2014 10:54:41.307 INFO [Thread-210] javazoom.jlgui.basicplayer.BasicPlayer.startPlayback Creating new thread
+16-Feb-2014 10:54:41.308 INFO [BasicPlayer] javazoom.jlgui.basicplayer.BasicPlayer.run Thread Running
+16-Feb-2014 10:57:41.901 INFO [http-nio-80-exec-5] javazoom.jlgui.basicplayer.BasicPlayer.open open(E:\Itunes\Music\The Beatles\Please Please Me (Remastered)\01 I Saw Her Standing There.mp3)
+16-Feb-2014 10:57:42.431 INFO [BasicPlayer] javazoom.jlgui.basicplayer.BasicPlayer.closeStream Stream closed
+16-Feb-2014 10:57:42.431 INFO [http-nio-80-exec-5] javazoom.jlgui.basicplayer.BasicPlayer.closeStream Stream closed
+16-Feb-2014 10:57:42.432 INFO [BasicPlayer] javazoom.jlgui.basicplayer.BasicPlayer.run Thread completed
+16-Feb-2014 10:57:42.507 INFO [http-nio-80-exec-5] javazoom.jlgui.basicplayer.BasicPlayer.createLine Create Line
+16-Feb-2014 10:57:42.508 INFO [http-nio-80-exec-5] javazoom.jlgui.basicplayer.BasicPlayer.createLine Create Line : Source format : MPEG1L3 44100.0 Hz, unknown bits per sample, stereo, unknown frame size, 38.28125 frames/second, 
+16-Feb-2014 10:57:42.508 INFO [http-nio-80-exec-5] javazoom.jlgui.basicplayer.BasicPlayer.createLine Create Line : Target format: PCM_SIGNED 44100.0 Hz, 16 bit, stereo, 4 bytes/frame, little-endian
+16-Feb-2014 10:57:42.512 INFO [http-nio-80-exec-5] javazoom.jlgui.basicplayer.BasicPlayer.createLine Line : com.sun.media.sound.DirectAudioDevice$DirectSDL@1be6d5ac
+16-Feb-2014 10:57:42.513 INFO [http-nio-80-exec-5] javazoom.jlgui.basicplayer.BasicPlayer.startPlayback startPlayback called
+16-Feb-2014 10:57:42.513 INFO [http-nio-80-exec-5] javazoom.jlgui.basicplayer.BasicPlayer.initLine initLine()
+16-Feb-2014 10:57:42.527 INFO [http-nio-80-exec-5] javazoom.jlgui.basicplayer.BasicPlayer.openLine Open Line : BufferSize=88200
+16-Feb-2014 10:57:42.528 INFO [http-nio-80-exec-5] javazoom.jlgui.basicplayer.BasicPlayer.openLine Master Gain Control : [-80.0,6.0206] 0.625
+16-Feb-2014 10:57:42.528 INFO [http-nio-80-exec-5] javazoom.jlgui.basicplayer.BasicPlayer.openLine Pan Control : [-1.0,1.0] 0.0078125
+16-Feb-2014 10:57:42.529 INFO [http-nio-80-exec-5] javazoom.jlgui.basicplayer.BasicPlayer.startPlayback Creating new thread
+16-Feb-2014 10:57:42.529 INFO [BasicPlayer] javazoom.jlgui.basicplayer.BasicPlayer.run Thread Running
+16-Feb-2014 11:00:36.619 INFO [BasicPlayer] javazoom.jlgui.basicplayer.BasicPlayer.closeStream Stream closed
+16-Feb-2014 11:00:36.619 INFO [Thread-221] javazoom.jlgui.basicplayer.BasicPlayer.open open(E:\Itunes\Music\Rammstein\Mutter\07 Spieluhr.mp3)
+16-Feb-2014 11:00:36.620 INFO [BasicPlayer] javazoom.jlgui.basicplayer.BasicPlayer.run Thread completed
+16-Feb-2014 11:00:36.621 INFO [Thread-221] javazoom.jlgui.basicplayer.BasicPlayer.closeStream Stream closed
+16-Feb-2014 11:00:36.714 INFO [Thread-221] javazoom.jlgui.basicplayer.BasicPlayer.createLine Create Line
+16-Feb-2014 11:00:36.714 INFO [Thread-221] javazoom.jlgui.basicplayer.BasicPlayer.createLine Create Line : Source format : MPEG1L3 44100.0 Hz, unknown bits per sample, stereo, unknown frame size, 38.28125 frames/second, 
+16-Feb-2014 11:00:36.715 INFO [Thread-221] javazoom.jlgui.basicplayer.BasicPlayer.createLine Create Line : Target format: PCM_SIGNED 44100.0 Hz, 16 bit, stereo, 4 bytes/frame, little-endian
+16-Feb-2014 11:00:36.719 INFO [Thread-221] javazoom.jlgui.basicplayer.BasicPlayer.createLine Line : com.sun.media.sound.DirectAudioDevice$DirectSDL@349eddf9
+16-Feb-2014 11:00:36.720 INFO [Thread-221] javazoom.jlgui.basicplayer.BasicPlayer.startPlayback startPlayback called
+16-Feb-2014 11:00:36.720 INFO [Thread-221] javazoom.jlgui.basicplayer.BasicPlayer.initLine initLine()
+16-Feb-2014 11:00:36.734 INFO [Thread-221] javazoom.jlgui.basicplayer.BasicPlayer.openLine Open Line : BufferSize=88200
+16-Feb-2014 11:00:36.734 INFO [Thread-221] javazoom.jlgui.basicplayer.BasicPlayer.openLine Master Gain Control : [-80.0,6.0206] 0.625
+16-Feb-2014 11:00:36.734 INFO [Thread-221] javazoom.jlgui.basicplayer.BasicPlayer.openLine Pan Control : [-1.0,1.0] 0.0078125
+16-Feb-2014 11:00:36.735 INFO [Thread-221] javazoom.jlgui.basicplayer.BasicPlayer.startPlayback Creating new thread
+16-Feb-2014 11:00:36.735 INFO [BasicPlayer] javazoom.jlgui.basicplayer.BasicPlayer.run Thread Running
+16-Feb-2014 11:00:56.287 INFO [http-nio-80-exec-7] javazoom.jlgui.basicplayer.BasicPlayer.pausePlayback pausePlayback() completed
+16-Feb-2014 12:15:01.187 INFO [http-nio-80-exec-3] javazoom.jlgui.basicplayer.BasicPlayer.resumePlayback resumePlayback() completed
+16-Feb-2014 12:19:27.931 INFO [BasicPlayer] javazoom.jlgui.basicplayer.BasicPlayer.closeStream Stream closed
+16-Feb-2014 12:19:27.931 INFO [Thread-230] javazoom.jlgui.basicplayer.BasicPlayer.open open(E:\Itunes\Music\Dream Theater\Black Clouds & Silver Linings\3-06 The Count of Tuscany ( Instrume.mp3)
+16-Feb-2014 12:19:27.931 INFO [BasicPlayer] javazoom.jlgui.basicplayer.BasicPlayer.run Thread completed
+16-Feb-2014 12:19:27.932 INFO [Thread-230] javazoom.jlgui.basicplayer.BasicPlayer.closeStream Stream closed
+16-Feb-2014 12:19:28.024 INFO [Thread-230] javazoom.jlgui.basicplayer.BasicPlayer.createLine Create Line
+16-Feb-2014 12:19:28.024 INFO [Thread-230] javazoom.jlgui.basicplayer.BasicPlayer.createLine Create Line : Source format : MPEG1L3 44100.0 Hz, unknown bits per sample, stereo, unknown frame size, 38.28125 frames/second, 
+16-Feb-2014 12:19:28.024 INFO [Thread-230] javazoom.jlgui.basicplayer.BasicPlayer.createLine Create Line : Target format: PCM_SIGNED 44100.0 Hz, 16 bit, stereo, 4 bytes/frame, little-endian
+16-Feb-2014 12:19:28.028 INFO [Thread-230] javazoom.jlgui.basicplayer.BasicPlayer.createLine Line : com.sun.media.sound.DirectAudioDevice$DirectSDL@2a19bf81
+16-Feb-2014 12:19:28.028 INFO [Thread-230] javazoom.jlgui.basicplayer.BasicPlayer.startPlayback startPlayback called
+16-Feb-2014 12:19:28.028 INFO [Thread-230] javazoom.jlgui.basicplayer.BasicPlayer.initLine initLine()
+16-Feb-2014 12:19:28.038 INFO [Thread-230] javazoom.jlgui.basicplayer.BasicPlayer.openLine Open Line : BufferSize=88200
+16-Feb-2014 12:19:28.038 INFO [Thread-230] javazoom.jlgui.basicplayer.BasicPlayer.openLine Master Gain Control : [-80.0,6.0206] 0.625
+16-Feb-2014 12:19:28.038 INFO [Thread-230] javazoom.jlgui.basicplayer.BasicPlayer.openLine Pan Control : [-1.0,1.0] 0.0078125
+16-Feb-2014 12:19:28.039 INFO [Thread-230] javazoom.jlgui.basicplayer.BasicPlayer.startPlayback Creating new thread
+16-Feb-2014 12:19:28.039 INFO [BasicPlayer] javazoom.jlgui.basicplayer.BasicPlayer.run Thread Running

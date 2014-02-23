@@ -1,0 +1,21 @@
+<%@ page contentType="application/json" import="raspiejukebox.*, java.io.*, java.util.List"%><%!
+String sanitizeString(String s){
+	return s.replaceAll("\\\\", "\\\\")
+			.replaceAll("\"", "\\\"");
+}
+%><%
+String dataToGrab = request.getParameter("data");
+TracksDatabase tdb = TracksDatabase.get();
+
+if (dataToGrab==null)
+	out.println("Nothing to grab");
+else if (dataToGrab.equals("artists")){
+	out.print('{');
+	for (String artistName: tdb.getArtists()){
+		out.print("\"");
+		out.print(sanitizeString(artistName));
+		out.print("\":[],");
+	}
+	out.print("\b}");
+}
+%>

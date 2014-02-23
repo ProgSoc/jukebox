@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/slider.js"></script>
+	<script type="text/javascript" src="js/interface.js"></script>
+	<script type="text/javascript" src="js/lib.js"></script>
+	
+	<title>ProgSoc Jukebox</title>
+</head>
+
+<body>
+	<!--Banner accross top of page-->
+	<div id="banner">
+		
+		<div id="controls">
+			<svg width="75" height="75">
+				<polygon id="playbutton" points="75,37.5 18.75,70 18.75,5" />
+				
+				<g id="pausebutton" >
+					<rect width="70" height="60" y="7" x="10"style="opacity:0"/>
+					<rect width="25" height="60" y="7" x="10" />
+					<rect width="25" height="60" y="7" x="45" />
+				</g>
+			</svg>
+			
+			<svg width="75" height="75">
+				<polygon id="skipbutton" points="74.5,37.5 37.375,70 37.375,47.5 12.375,70 12.375,5 37.365,27.5 37.375,5" />
+			</svg>
+		</div>
+		
+		<div id="playing">
+			<div id='playingcenter'>
+				<div id='playingtrack'>Nothing</div>
+				<div id='playingartist'>...</div>
+				<div id='playingalbum'>...</div>
+			</div>
+		</div>
+		
+		<div id="volume">
+			<canvas width="150" height="25"></canvas>
+		</div>
+	</div>
+	
+	
+	<!--Queued Tracks list-->
+	<div id="queue">
+		<h1>Queue</h1>
+		
+		<table>
+			<tr>
+				<th>#</th>
+				<th>Name</th>
+				<th>Artist</th>
+			</tr>
+		</table>
+	</div>
+	
+	<!--Current Tracks Panel -->
+	<div id="tracks">
+		<div>
+			<h1>Artists</h1>
+			<h2 id="backbutton">Back</h2>
+		</div>
+		<div id="selections">
+		
+		</div>
+	</div>
+	
+</body>
+</html>

@@ -1,0 +1,30 @@
+
+
+<!DOCTYPE html
+	PUBLIC "-//W3D//DTD XHTML 1.0 Strict//EN"
+		"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+
+<head>
+<title>Progsoc Jukebox</title>
+<script type="text/javascript">
+	function reloadPlayData(){
+		document.getElementById("topbanner").contentWindow.reloadCurrentState();
+		document.getElementById("queue").contentWindow.reloadSongQueue();
+	}
+</script>
+</head>
+
+
+<frameset rows="150, 100%" border="2" style="border: solid #00ff00">
+	<frame id="topbanner" src="trackbanner.html">
+	<frameset cols="300, 100%">
+		<frame id="queue" src="songqueue.html">
+		<frame id="trackselect" src="trackselect.jsp">
+	</frameset>
+	
+	<noframes>Get some frames up in this bitch</noframes>
+</frameset>
+
+</html>
